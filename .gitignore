@@ -1,0 +1,17 @@
+# beelden en films staan in Vercel Blob (zie docs/migratie/01_MIGRATIE.md); hier alleen lokaal
+assets/beelden/
+assets/downloads/
+referentie/_site/img/
+# nooit in git
+.env*
+*.db
+*.sqlite
+keys.json
+node_modules/
+.vercel/
+dist/
+.astro/
+.DS_Store
+# uitvoer van de controles
+.vergelijk/
+.controle/

@@ -1,0 +1,149 @@
+{
+ "_toelichting": "De paren voor tools/vergelijk.mjs. De paden zijn een VOORSTEL (06_KOPPELINGEN §5: wat nu live staat houdt zijn adres, de rest volgt de naam van de pagina). Legt Tom andere routes vast, pas ze dan hier en in Beheer → Website → Doorverwijzingen aan.",
+ "maskers": [
+  "video",
+  "canvas",
+  "iframe",
+  "[data-vergelijk-masker]"
+ ],
+ "paginas": [
+  {
+   "naam": "home",
+   "referentie": "index.html",
+   "nl": "/",
+   "en": "/en"
+  },
+  {
+   "naam": "collectie",
+   "referentie": "collectie.html",
+   "nl": "/collectie",
+   "en": "/en/collection"
+  },
+  {
+   "naam": "product-strata",
+   "referentie": "product-strata.html",
+   "nl": "/covers/strata",
+   "en": "/en/covers/strata"
+  },
+  {
+   "naam": "product-sora",
+   "referentie": "product-sora.html",
+   "nl": "/covers/sora",
+   "en": "/en/covers/sora"
+  },
+  {
+   "naam": "product-terra",
+   "referentie": "product-terra.html",
+   "nl": "/covers/terra",
+   "en": "/en/covers/terra"
+  },
+  {
+   "naam": "product-vienna",
+   "referentie": "product-vienna.html",
+   "nl": "/covers/vienna",
+   "en": "/en/covers/vienna"
+  },
+  {
+   "naam": "product-mesa",
+   "referentie": "product-mesa.html",
+   "nl": "/covers/mesa",
+   "en": "/en/covers/mesa"
+  },
+  {
+   "naam": "product-vesper",
+   "referentie": "product-vesper.html",
+   "nl": "/covers/vesper",
+   "en": "/en/covers/vesper"
+  },
+  {
+   "naam": "interieurs",
+   "referentie": "interieurs.html",
+   "nl": "/interieurs",
+   "en": "/en/interiors"
+  },
+  {
+   "naam": "montage",
+   "referentie": "montage.html",
+   "nl": "/montage",
+   "en": "/en/installation"
+  },
+  {
+   "naam": "muur",
+   "referentie": "muur.html",
+   "nl": "/muur",
+   "en": "/en/wall"
+  },
+  {
+   "naam": "over",
+   "referentie": "over.html",
+   "nl": "/over",
+   "en": "/en/about"
+  },
+  {
+   "naam": "contact",
+   "referentie": "contact.html",
+   "nl": "/contact",
+   "en": "/en/contact"
+  },
+  {
+   "naam": "zakelijk",
+   "referentie": "zakelijk.html",
+   "nl": "/zakelijk",
+   "en": "/en/business"
+  },
+  {
+   "naam": "partner",
+   "referentie": "partner.html",
+   "nl": "/partner",
+   "en": "/en/partner"
+  },
+  {
+   "naam": "proefstalen",
+   "referentie": "proefstalen.html",
+   "nl": "/proefstalen",
+   "en": "/en/samples"
+  },
+  {
+   "naam": "bestellen",
+   "referentie": "bestellen.html",
+   "nl": "/bestellen",
+   "en": "/en/checkout"
+  },
+  {
+   "naam": "mijn-bestelling",
+   "referentie": "mijn-bestelling.html",
+   "nl": "/mijn-bestelling",
+   "en": "/en/my-order"
+  },
+  {
+   "naam": "juridisch",
+   "referentie": "juridisch.html",
+   "nl": "/juridisch",
+   "en": "/en/legal"
+  },
+  {
+   "naam": "geur",
+   "referentie": "geur.html",
+   "nl": "/geur",
+   "en": "/en/scent"
+  },
+  {
+   "naam": "accessoires",
+   "referentie": "accessoires.html",
+   "nl": "/accessoires",
+   "en": "/en/accessories"
+  },
+  {
+   "naam": "app",
+   "referentie": "app.html",
+   "nl": "/app",
+   "en": "/en/app"
+  },
+  {
+   "naam": "404",
+   "referentie": "404.html",
+   "nl": "/bestaat-niet",
+   "en": "/en/does-not-exist"
+  }
+ ]
+}

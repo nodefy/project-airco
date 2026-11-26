@@ -1,0 +1,47 @@
+# De controles bij elke pull request (docs/migratie/03_SUPERPROMPT.md §5).
+# Fase 0: de controles op de repo zelf en de tests van de tools.
+# Fase 1 en 2 zetten de stappen aan die nu als opmerking staan (ze hebben de seed en een draaiende site nodig).
+name: controles
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  controles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Tests van de tools
+        run: pnpm test
+      - name: Controles (git, geheimen, privacy, tekstregels, vertaling, referentie)
+        run: pnpm controles
+      - name: Geheimen (gitleaks)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # voor een organisatie vraagt gitleaks-action een licentiesleutel; zet GITLEAKS_LICENSE als repo-geheim
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+
+      # Fase 0, zodra de beelden op Blob staan (de referentie verwijst dan naar Blob en werkt ook hier):
+      # - run: pnpm exec playwright install --with-deps chromium
+      # - name: De referentie toont geen kapot beeld
+      #   run: pnpm controleer:referentie
+      #
+      # Fase 1: elke zichtbare tekst van de referentie staat in de seed (100 %)
+      # - run: node tools/tekstknopen.mjs referentie/site-versie-tom content/seed
+      #
+      # Fase 2: schermafbeeldingen tegen de referentie, Lighthouse en axe op de preview
+      # - run: node tools/vergelijk.mjs --nieuw ${{ env.PREVIEW_URL }}

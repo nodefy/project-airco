@@ -1,0 +1,12 @@
+{
+ "_toelichting": "De eerste lijst uit 02_BACKEND.md §4.4. Tom vult hem later zelf aan in de backend (Instellingen → Tekstregels); tot dan is dit de bron voor de controle in CI. 'patroon' is een reguliere expressie, zonder hoofdlettergevoeligheid.",
+ "regels": [
+  { "patroon": "nog niet (getest|gemeten|bekend)", "waarom": "geen twijfel in klantteksten (Tom, 25-11)" },
+  { "patroon": "hangt af van", "waarom": "geen twijfel in klantteksten (Tom, 25-11)" },
+  { "patroon": "not yet (tested|measured|known)", "waarom": "geen twijfel in klantteksten (Tom, 25-11)" },
+  { "patroon": "10[ -]?(jaar|year)s?[ -]?(garantie|warranty|guarantee)", "waarom": "de garantie is 5 jaar, niet 10 (Tom, 23-10)" },
+  { "patroon": "\\bmassie(f|ve)\\b|\\bsolid (oak|walnut|wood)\\b", "waarom": "niet 'massief', wel fineer (materiaalbesluit 14-11)" },
+  { "patroon": "handgemaakt in amsterdam|handmade in amsterdam|made by hand in amsterdam", "waarom": "niet 'handgemaakt in Amsterdam' (brandstrategie)" },
+  { "patroon": "aircovers?\\s?[™®]", "waarom": "'aircover' zonder ™ of ®" }
+ ]
+}
