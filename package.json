@@ -12,7 +12,8 @@
     "tekstknopen": "node tools/tekstknopen.mjs referentie/site-versie-tom",
     "vergelijk": "node tools/vergelijk.mjs",
     "controles": "node tools/controles/alles.mjs",
-    "test": "node --test \"tools/**/*.test.mjs\""
+    "test": "node --test \"tools/**/*.test.mjs\" \"packages/*/test/*.test.mjs\"",
+    "typen": "pnpm --filter @ayr/content-schema genereer"
   },
   "devDependencies": {
     "@vercel/blob": "^1.1.1",

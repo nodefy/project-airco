@@ -15,3 +15,5 @@ dist/
 # uitvoer van de controles
 .vergelijk/
 .controle/
+# uitvoer van packages/content-schema (uit content_schema.json; zie de LEESMIJ daar)
+packages/content-schema/src/*.gen.ts
